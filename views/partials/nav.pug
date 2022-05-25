@@ -1,0 +1,25 @@
+nav
+  .nav-wrapper
+    a.brand-logo(href='#') Logo
+    ul#nav-mobile.right.hide-on-med-and-down
+        if page === 'home'
+            li.active
+                a(href='/') Home
+            li
+                a(href='/contact') Contact
+            li
+                a(href='/about') About
+        else if page === 'contact'
+            li
+                a(href='/') Home
+            li.active
+                a(href='/contact') Contact
+            li
+                a(href='/about') About
+        else if page === 'about'
+            li
+                a(href='/') Home
+            li
+                a(href='/contact') Contact
+            li.active
+                a(href='/about') About

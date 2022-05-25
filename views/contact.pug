@@ -1,0 +1,37 @@
+extends layouts/main
+block content
+    h1 Contact page
+    .row
+      form.col.s12
+        .row
+      .input-field.col.s6
+        input#first_name.validate(placeholder='Placeholder' type='text')
+        label(for='first_name') First Name
+      .input-field.col.s6
+        input#last_name.validate(type='text')
+        label(for='last_name') Last Name
+        .row
+      .input-field.col.s12
+        input#disabled.validate(disabled='' value='I am not editable' type='text')
+        label(for='disabled') Disabled
+        .row
+          .input-field.col.s12
+            input#password.validate(type='password')
+            label(for='password') Password
+        .row
+          .input-field.col.s12
+            input#email.validate(type='email')
+            label(for='email') Email
+            button Send
+    
+    .collection
+      a.collection-item(href='#!')
+        span.badge 1
+        | +91238476
+      a.collection-item(href='#!')
+        span.new.badge 4
+        | +1098723
+      a.collection-item(href='#!') Alan
+      a.collection-item(href='#!')
+        span.badge 14
+        | +9847503
